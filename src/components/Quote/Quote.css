@@ -1,4 +1,73 @@
 .quote {
   width: 50%;
   height: 100vh;
+  position: relative;
+  background-color: #3c3b3c;
+}
+
+.quote__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  min-height: 220px;
+  padding: 5px 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #565556;
+  border: 1px solid rgb(32, 32, 32);
+  border-radius: 10px;
+}
+
+.quote__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.quote__text {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-style: italic;
+  color: #fff;
+}
+
+.quote__author {
+  display: inline-flex;
+  margin-bottom: 20px;
+  align-self: flex-end;
+  font-size: 18px;
+  color: #fff;
+}
+
+.quote__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quote__btn {
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #3c3b3c;
+  color: #fff;
+  border: 1px solid rgb(32, 32, 32);
+  transition: background-color 0.2s linear;
+}
+
+.quote__btn:hover {
+  background-color: #444444;
+}
+
+.btn-share {
+  display: flex;
+  align-items: center;
+}
+
+.btn-share > svg {
+  font-size: 20px;
+  margin-left: 10px;
 }
